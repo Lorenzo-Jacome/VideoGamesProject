@@ -114,7 +114,7 @@ MonoBehaviour:
   m_MinSize: {x: 681, y: 472}
   m_MaxSize: {x: 14000, y: 14022}
   vertical: 0
-  controlID: 52
+  controlID: 115
 --- !u!114 &6
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -445,9 +445,9 @@ MonoBehaviour:
   m_PlayAudio: 0
   m_AudioPlay: 0
   m_Position:
-    m_Target: {x: 0, y: 0, z: 0}
+    m_Target: {x: 1.2870679, y: -0.085124016, z: -0.24609375}
     speed: 2
-    m_Value: {x: 3.4861865, y: 0.002560438, z: -0.553041}
+    m_Value: {x: 1.2870679, y: -0.085124016, z: -0.24609375}
   m_RenderMode: 0
   m_CameraMode:
     drawMode: 0
@@ -480,9 +480,9 @@ MonoBehaviour:
     speed: 2
     m_Value: {x: 0, y: 0, z: 0, w: 1}
   m_Size:
-    m_Target: 10
+    m_Target: 12.46182
     speed: 2
-    m_Value: 15.529694
+    m_Value: 11.925186
   m_Ortho:
     m_Target: 1
     speed: 2
@@ -643,14 +643,14 @@ MonoBehaviour:
   m_LastFolders:
   - Assets
   m_LastFoldersGridSize: -1
-  m_LastProjectPath: C:\Users\Lorenzo\Desktop\Nihilist\Nihilist
+  m_LastProjectPath: C:\Users\Lorenzo\Desktop\Nihilist\VideoGamesProject
   m_LockTracker:
     m_IsLocked: 0
   m_FolderTreeState:
     scrollPos: {x: 0, y: 0}
-    m_SelectedIDs: 182d0000
-    m_LastClickedID: 11544
-    m_ExpandedIDs: 00000000182d000000ca9a3b
+    m_SelectedIDs: 982c0000
+    m_LastClickedID: 11416
+    m_ExpandedIDs: 00000000982c000000ca9a3b
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
@@ -678,7 +678,7 @@ MonoBehaviour:
     scrollPos: {x: 0, y: 0}
     m_SelectedIDs: 
     m_LastClickedID: 0
-    m_ExpandedIDs: 
+    m_ExpandedIDs: 00000000982c0000
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
@@ -705,7 +705,7 @@ MonoBehaviour:
   m_ListAreaState:
     m_SelectedInstanceIDs: 
     m_LastClickedInstanceID: 0
-    m_HadKeyboardFocusLastEvent: 0
+    m_HadKeyboardFocusLastEvent: 1
     m_ExpandedInstanceIDs: c62300004830000006370000763300009c3a0000c63a0000983d000000000000
     m_RenameOverlay:
       m_UserAcceptedRename: 0
