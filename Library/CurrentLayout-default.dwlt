@@ -114,7 +114,7 @@ MonoBehaviour:
   m_MinSize: {x: 681, y: 472}
   m_MaxSize: {x: 14000, y: 14022}
   vertical: 0
-  controlID: 115
+  controlID: 52
 --- !u!114 &6
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -482,7 +482,7 @@ MonoBehaviour:
   m_Size:
     m_Target: 12.46182
     speed: 2
-    m_Value: 11.925186
+    m_Value: 12.46182
   m_Ortho:
     m_Target: 1
     speed: 2
@@ -637,19 +637,19 @@ MonoBehaviour:
     m_SkipHidden: 0
     m_SearchArea: 1
     m_Folders:
-    - Assets
+    - Assets/Sprites
   m_ViewMode: 1
   m_StartGridSize: 64
   m_LastFolders:
-  - Assets
+  - Assets/Sprites
   m_LastFoldersGridSize: -1
   m_LastProjectPath: C:\Users\Lorenzo\Desktop\Nihilist\VideoGamesProject
   m_LockTracker:
     m_IsLocked: 0
   m_FolderTreeState:
     scrollPos: {x: 0, y: 0}
-    m_SelectedIDs: 982c0000
-    m_LastClickedID: 11416
+    m_SelectedIDs: fe2c0000
+    m_LastClickedID: 11518
     m_ExpandedIDs: 00000000982c000000ca9a3b
     m_RenameOverlay:
       m_UserAcceptedRename: 0
