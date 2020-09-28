@@ -1,0 +1,26 @@
+ESCENA
+
+x = 12,000 px
+
+y = 3,000 px
+
+
+MAPA
+
+x = 12,000 px
+
+y = 1,000 px
+
+
+BOSS
+
+2,000 px
+
+2,000 px
+
+
+FONDOS
+
+x = 3,000 px
+
+y = 2,000 px
