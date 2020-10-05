@@ -10,6 +10,7 @@ public class MotionRB : MonoBehaviour
     public float speed;
     public Vector3 jumpForce;
     Vector3 motion;
+    Vector3 mousePosition;
     Rigidbody2D rb;
     SpriteRenderer sr;
     public bool grounded;
@@ -32,17 +33,18 @@ public class MotionRB : MonoBehaviour
     void Update()
     {
         //HORIZONTALS
+        mousePosition.x = Input.mousePosition.x;
         motion.x = Input.GetAxisRaw("Horizontal") * speed;
         motion.y = rb.velocity.y;
 
-        if (motion.x > 0 && !facingRight)
+        if (mousePosition.x > 560 && !facingRight)
         {
             CreateDust();
             facingRight = true;
             transform.Rotate(0, 180, 0);
         }
         
-        if (motion.x < 0 && facingRight)
+        if (mousePosition.x < 560 && facingRight)
         {
             CreateDust();
             facingRight = false;
@@ -94,10 +96,12 @@ public class MotionRB : MonoBehaviour
             rb.AddForce(jumpForce);
             grounded = false;
         }
+        
         if (Input.GetKeyUp(KeyCode.Space) && grounded == false && motion.y > 0)
         {
-            motion.y = .0001F;
+            motion.y = motion.y/2;
         }
+        
         rb.velocity = motion;
 
         //ANIMATION

@@ -4,10 +4,10 @@ using UnityEngine;
 
 public class CollectCoin : MonoBehaviour
 {
-    void OnCollisionEnter2D(Collision2D col)
-    {
-        print("COLLIDED WITH " + col.gameObject.name);
-    }
+    /* void OnCollisionEnter2D(Collision2D col)
+    //{
+    //    print("COLLIDED WITH " + col.gameObject.name);
+    } */
 
     void OnTriggerEnter2D(Collider2D col)
     {

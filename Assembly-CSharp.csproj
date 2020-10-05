@@ -41,6 +41,7 @@
      <Compile Include="Assets\Scripts\CameraFollow.cs" />
      <Compile Include="Assets\Scripts\CollectCoin.cs" />
      <Compile Include="Assets\Scripts\EnemyDamage.cs" />
+     <Compile Include="Assets\Scripts\EnemyPlayerDetection.cs" />
      <Compile Include="Assets\Scripts\Fire.cs" />
      <Compile Include="Assets\Scripts\Health.cs" />
      <Compile Include="Assets\Scripts\MotionRB.cs" />
