@@ -10,15 +10,16 @@ public class MotionRB : MonoBehaviour
     public float speed;
     public Vector3 jumpForce;
     Vector3 motion;
-    Vector3 mousePosition;
+    public Vector3 mousePosition;
     Rigidbody2D rb;
     SpriteRenderer sr;
     public bool grounded;
     bool djump;
     bool facingRight = true;
     public Animator animator;
-    //public float airTime = 2f;
+    public Camera cam;
     bool pesa;
+    public Vector3 restaMP;
 
     // Start is called before the first frame update
     void Start()
@@ -33,18 +34,30 @@ public class MotionRB : MonoBehaviour
     void Update()
     {
         //HORIZONTALS
-        mousePosition.x = Input.mousePosition.x;
+        mousePosition = cam.ScreenToWorldPoint(Input.mousePosition);
         motion.x = Input.GetAxisRaw("Horizontal") * speed;
         motion.y = rb.velocity.y;
+        
+        restaMP = mousePosition - transform.position;
+        restaMP.y = restaMP.y + .5f;
+        if(mousePosition.x > transform.position.x)
+        {
+            restaMP.x = restaMP.x - .5f;
+        }
+        else
+        {
+            restaMP.x = restaMP.x + .5f;
+        }
+        
 
-        if (mousePosition.x > 560 && !facingRight)
+        if (mousePosition.x > transform.position.x && !facingRight)
         {
             CreateDust();
             facingRight = true;
             transform.Rotate(0, 180, 0);
         }
         
-        if (mousePosition.x < 560 && facingRight)
+        if (mousePosition.x < transform.position.x && facingRight)
         {
             CreateDust();
             facingRight = false;
