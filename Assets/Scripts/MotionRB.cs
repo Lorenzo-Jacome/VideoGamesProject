@@ -1,6 +1,7 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
 
 public class MotionRB : MonoBehaviour
 {
@@ -21,6 +22,11 @@ public class MotionRB : MonoBehaviour
     bool pesa;
     public Vector3 restaMP;
     public Transform FireSpawn;
+    
+    //Variables for stamina:
+    public int maxStamina;
+    public int currentStamina;
+    public Slider staminaBar;
 
     // Start is called before the first frame update
     void Start()
@@ -29,6 +35,16 @@ public class MotionRB : MonoBehaviour
         sr = GetComponentInChildren<SpriteRenderer>();
         grounded = false;
         audioSrc = GetComponent<AudioSource>();
+
+        //Start stamina
+        currentStamina = maxStamina;
+        staminaBar.maxValue = maxStamina;
+        staminaBar.value = currentStamina;
+    }
+
+    void StaminaSystem(){
+            currentStamina -= 1;
+            staminaBar.value = currentStamina;
     }
 
     // Update is called once per frame
@@ -80,7 +96,7 @@ public class MotionRB : MonoBehaviour
             pesa = false;
         }
 
-        if (Input.GetKeyDown(KeyCode.Space) && djump == true && grounded == false) //double jump
+        if (Input.GetKeyDown(KeyCode.Space) && djump == true && grounded == false && currentStamina > 0) //double jump
         {
             SoundManagerScript.PlaySound("JUMP");
             animator.SetFloat("pesa", 0);
@@ -89,16 +105,20 @@ public class MotionRB : MonoBehaviour
             rb.gravityScale = 1;
             rb.AddForce(jumpForce);
             djump = false;
+
+            StaminaSystem();
         }
 
-        if (Input.GetKeyDown(KeyCode.Space) && grounded == true) //jump
-        {
+        
+        if (Input.GetKeyDown(KeyCode.Space) && grounded == true && currentStamina > 0){ //jump
             audioSrc.Stop();
             SoundManagerScript.PlaySound("JUMP");
             motion.y = .0001F;
             rb.gravityScale = 1;
             rb.AddForce(jumpForce);
             grounded = false;
+
+            StaminaSystem();
         }
         
         if (Input.GetKeyUp(KeyCode.Space) && grounded == false && motion.y > 0)
