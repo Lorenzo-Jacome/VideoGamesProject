@@ -20,6 +20,7 @@ public class MotionRB : MonoBehaviour
     public Camera cam;
     bool pesa;
     public Vector3 restaMP;
+    public Transform FireSpawn;
 
     // Start is called before the first frame update
     void Start()
@@ -38,18 +39,8 @@ public class MotionRB : MonoBehaviour
         motion.x = Input.GetAxisRaw("Horizontal") * speed;
         motion.y = rb.velocity.y;
         
-        restaMP = mousePosition - transform.position;
-        restaMP.y = restaMP.y + .5f;
-        if(mousePosition.x > transform.position.x)
-        {
-            restaMP.x = restaMP.x - .5f;
-        }
-        else
-        {
-            restaMP.x = restaMP.x + .5f;
-        }
+        restaMP = mousePosition - FireSpawn.position;
         
-
         if (mousePosition.x > transform.position.x && !facingRight)
         {
             CreateDust();
