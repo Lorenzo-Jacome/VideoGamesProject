@@ -96,7 +96,7 @@ MonoBehaviour:
   m_MinSize: {x: 911, y: 442}
   m_MaxSize: {x: 22006, y: 10021}
   vertical: 0
-  controlID: 156
+  controlID: 113
 --- !u!114 &5
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -142,7 +142,7 @@ MonoBehaviour:
   m_MinSize: {x: 201, y: 442}
   m_MaxSize: {x: 4001, y: 8042}
   vertical: 1
-  controlID: 59
+  controlID: 35
 --- !u!114 &7
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -302,9 +302,9 @@ MonoBehaviour:
   m_SceneHierarchy:
     m_TreeViewState:
       scrollPos: {x: 0, y: 0}
-      m_SelectedIDs: 2e370000
-      m_LastClickedID: 0
-      m_ExpandedIDs: 5efbffff
+      m_SelectedIDs: b8430000
+      m_LastClickedID: 17336
+      m_ExpandedIDs: 48f8ffffd2f8ffff5efbffff583900001c420000
       m_RenameOverlay:
         m_UserAcceptedRename: 0
         m_Name: 
@@ -405,20 +405,20 @@ MonoBehaviour:
     m_SkipHidden: 0
     m_SearchArea: 1
     m_Folders:
-    - Assets/Scripts
+    - Assets/Prefabs/Enemies
   m_ViewMode: 1
   m_StartGridSize: 64
   m_LastFolders:
-  - Assets/Scripts
+  - Assets/Prefabs/Enemies
   m_LastFoldersGridSize: -1
   m_LastProjectPath: C:\Users\Max\TEST
   m_LockTracker:
     m_IsLocked: 0
   m_FolderTreeState:
     scrollPos: {x: 0, y: 0}
-    m_SelectedIDs: 043b0000
-    m_LastClickedID: 15108
-    m_ExpandedIDs: 00000000ec3a000000ca9a3b
+    m_SelectedIDs: 4a3b0000
+    m_LastClickedID: 15178
+    m_ExpandedIDs: 00000000ec3a0000fe3a000000ca9a3b
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
@@ -630,9 +630,9 @@ MonoBehaviour:
   m_PlayAudio: 0
   m_AudioPlay: 0
   m_Position:
-    m_Target: {x: -2.3729858, y: -0.5466328, z: -2.5750883}
+    m_Target: {x: 321.27887, y: 263.19638, z: -26.605045}
     speed: 2
-    m_Value: {x: -2.3729858, y: -0.5466328, z: -2.5750883}
+    m_Value: {x: 321.27887, y: 263.19638, z: -26.605045}
   m_RenderMode: 0
   m_CameraMode:
     drawMode: 0
@@ -682,9 +682,9 @@ MonoBehaviour:
     speed: 2
     m_Value: {x: 0, y: 0, z: 0, w: 1}
   m_Size:
-    m_Target: 0.9800329
+    m_Target: 257.61084
     speed: 2
-    m_Value: 0.9800329
+    m_Value: 257.61084
   m_Ortho:
     m_Target: 1
     speed: 2
