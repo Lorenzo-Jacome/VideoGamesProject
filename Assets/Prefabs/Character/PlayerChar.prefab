@@ -4892,7 +4892,9 @@ MonoBehaviour:
   mousePosition: {x: 0, y: 0, z: 0}
   grounded: 0
   animator: {fileID: 4688908371301206527}
-  cam: {fileID: 0}
+  cam: {fileID: 6715810522656237932, guid: e560e7f833c3a834b8fee447896af0cf, type: 3}
+  restaMP: {x: 0, y: 0, z: 0}
+  FireSpawn: {fileID: 4688908370799680269}
 --- !u!114 &4688908371301206513
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -4908,7 +4910,7 @@ MonoBehaviour:
   bullet: {fileID: 5456470229976214958, guid: 0b2e35bebc73abb4db3844dbdcb2d2dc, type: 3}
   bulletSpawn: {fileID: 4688908370799680269}
   delay: 0.2
-  player: {fileID: 0}
+  player: {fileID: 4688908371301206517}
   ang: 0
 --- !u!114 &4688908371301206512
 MonoBehaviour:
@@ -4924,7 +4926,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   maxHealth: 5
   currentHealth: 0
-  healthBar: {fileID: 0}
+  healthBar: {fileID: 5262111543436871795, guid: 4aba5241fabb3ac4b9456e39d5380c30,
+    type: 3}
 --- !u!212 &4688908371301206526
 SpriteRenderer:
   m_ObjectHideFlags: 0
