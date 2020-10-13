@@ -5,9 +5,16 @@ using UnityEngine.UI;
 
 public class MotionRB : MonoBehaviour
 {
+    //Variables animation
     public ParticleSystem dustDir;
     public ParticleSystem dustLand;
+    public Animator animator;
+    bool pesa;
+
+    //Variables audio
     AudioSource audioSrc;
+
+    //Variables movement
     public float speed;
     public Vector3 jumpForce;
     Vector3 motion;
@@ -15,14 +22,15 @@ public class MotionRB : MonoBehaviour
     Rigidbody2D rb;
     SpriteRenderer sr;
     public bool grounded;
+    public bool walled;
     bool djump;
     bool facingRight = true;
-    public Animator animator;
+
+    //Variables shooting
     public Camera cam;
-    bool pesa;
     public Vector3 restaMP;
     public Transform FireSpawn;
-    
+
     //Variables for stamina:
     public int maxStamina;
     public int currentStamina;
@@ -34,6 +42,7 @@ public class MotionRB : MonoBehaviour
         rb = GetComponent<Rigidbody2D>();
         sr = GetComponentInChildren<SpriteRenderer>();
         grounded = false;
+        walled = false;
         audioSrc = GetComponent<AudioSource>();
 
         //Start stamina
@@ -42,7 +51,8 @@ public class MotionRB : MonoBehaviour
         staminaBar.value = currentStamina;
     }
 
-    void StaminaSystem(){
+    void StaminaSystem()
+    {
             currentStamina -= 1;
             staminaBar.value = currentStamina;
     }
@@ -79,6 +89,7 @@ public class MotionRB : MonoBehaviour
         if (motion.x != 0 && grounded == true && !audioSrc.isPlaying)
         {
             audioSrc.Play();
+            walled = false;
         }
 
         //AIRS
@@ -129,9 +140,12 @@ public class MotionRB : MonoBehaviour
         rb.velocity = motion;
 
         //ANIMATION
+        animator.SetFloat("speedx", 0);
+        if (walled == false)
+        {
+            animator.SetFloat("speedx", motion.x);
+        }
         animator.SetFloat("speedy", motion.y);
-        animator.SetFloat("speedx", motion.x);
-
     }
 
     //TOCAR SUELO
@@ -146,6 +160,11 @@ public class MotionRB : MonoBehaviour
             djump = true;
             pesa = true;
             rb.gravityScale = 1;
+        }
+
+        if (col.gameObject.tag == "Walls")
+        {
+            walled = true;
         }
     }
 
