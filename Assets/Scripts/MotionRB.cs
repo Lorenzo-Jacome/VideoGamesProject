@@ -35,6 +35,7 @@ public class MotionRB : MonoBehaviour
     public int maxStamina;
     public int currentStamina;
     public Slider staminaBar;
+    bool counting = false;
 
     // Start is called before the first frame update
     void Start()
@@ -146,6 +147,15 @@ public class MotionRB : MonoBehaviour
             animator.SetFloat("speedx", motion.x);
         }
         animator.SetFloat("speedy", motion.y);
+
+        //STAMINA REGEN
+        staminaBar.value = currentStamina;
+        if (currentStamina < maxStamina && counting == false)
+        {
+            //gameObject.GetComponent<Health>().HealthRegen(1);             HEALTH ADD TEST
+            counting = true;
+            StartCoroutine(StamRegen());
+        }
     }
 
     //TOCAR SUELO
@@ -175,6 +185,17 @@ public class MotionRB : MonoBehaviour
         {
             dustDir.Play();
         }
+    }
+
+    //STAMINA TIMER
+    public IEnumerator StamRegen()
+    {
+        yield return new WaitForSeconds(3f);
+        if (currentStamina < maxStamina)
+        {
+            currentStamina += 1;
+        }
+        counting = false;
     }
 }
 

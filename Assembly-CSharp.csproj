@@ -36,8 +36,8 @@
     <ImplicitlyExpandDesignTimeFacades>false</ImplicitlyExpandDesignTimeFacades>
   </PropertyGroup>
   <ItemGroup>
-     <Compile Include="Assets\Prefabs\BulletDamage.cs" />
      <Compile Include="Assets\Scripts\Bars.cs" />
+     <Compile Include="Assets\Scripts\BulletDamage.cs" />
      <Compile Include="Assets\Scripts\CameraFollow.cs" />
      <Compile Include="Assets\Scripts\CollectCoin.cs" />
      <Compile Include="Assets\Scripts\EnemyDamage.cs" />

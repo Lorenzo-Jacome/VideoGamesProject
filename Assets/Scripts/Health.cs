@@ -20,6 +20,21 @@ public class Health : MonoBehaviour
             display = true;
         }
     }
+    void Update()
+    {
+        //HEALTH REGEN
+        //healthBar.value = currentHealth;
+    }
+
+    //STAMINA COUNTER
+    public void HealthRegen(int amount)
+    {
+        if(display && currentHealth < maxHealth)
+        {
+            currentHealth += amount;
+            healthBar.value = currentHealth;
+        }
+    }
 
     public void TakeDamage(int amount)
     {

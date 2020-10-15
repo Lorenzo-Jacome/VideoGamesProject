@@ -12,10 +12,10 @@ using UnityEngine.UI;
 
 public class Bars : MonoBehaviour
 {
-
-    public Slider slider;
+    public Slider healthBar;
+    bool display = false;
 
     public void SetHealth(int health){
-        slider.value = health;
+        healthBar.value = health;
     }
 }

@@ -4896,8 +4896,8 @@ MonoBehaviour:
   cam: {fileID: 0}
   restaMP: {x: 0, y: 0, z: 0}
   FireSpawn: {fileID: 2630619174235892155}
-  maxStamina: 100
-  currentStamina: 100
+  maxStamina: 10
+  currentStamina: 10
   staminaBar: {fileID: 0}
 --- !u!114 &2630619175503075035
 MonoBehaviour:
