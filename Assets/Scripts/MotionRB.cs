@@ -117,6 +117,11 @@ public class MotionRB : MonoBehaviour
             rb.gravityScale = 1;
             rb.AddForce(jumpForce);
             djump = false;
+            if (walled == true)
+            {
+                djump = true;
+                walled = false;
+            }
 
             StaminaSystem();
         }
@@ -174,7 +179,9 @@ public class MotionRB : MonoBehaviour
 
         if (col.gameObject.tag == "Walls")
         {
+
             walled = true;
+
         }
     }
 
@@ -190,7 +197,7 @@ public class MotionRB : MonoBehaviour
     //STAMINA TIMER
     public IEnumerator StamRegen()
     {
-        yield return new WaitForSeconds(3f);
+        yield return new WaitForSeconds(2f);
         if (currentStamina < maxStamina)
         {
             currentStamina += 1;

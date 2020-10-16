@@ -30,6 +30,11 @@ public class EnemyPlayerDetection : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+        if (player == null)
+        {
+            player = GameObject.FindWithTag("Player");
+        }
+        
         motion.x = rb.velocity.x;
         motion.y = rb.velocity.y;
         //start fast
