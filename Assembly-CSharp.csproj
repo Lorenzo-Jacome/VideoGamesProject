@@ -54,6 +54,9 @@
      <Compile Include="Assets\Scripts\Spin.cs" />
      <Compile Include="Assets\Scripts\TimeToLive.cs" />
      <Compile Include="Assets\Scripts\droneScript.cs" />
+     <Compile Include="Assets\Scripts\enemBulletMov.cs" />
+     <Compile Include="Assets\Scripts\enemyBulletDamage.cs" />
+     <Compile Include="Assets\Scripts\enemyLaserShoot.cs" />
      <None Include="Assets\Sprites\tiles\Enemies\enemies_spritesheet.txt" />
      <None Include="Assets\Sprites\tiles\HUD\hud_spritesheet.xml" />
      <None Include="Assets\Sprites\tiles\Tiles\tiles_spritesheet.xml" />

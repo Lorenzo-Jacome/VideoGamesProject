@@ -10,8 +10,8 @@ public class EnemyPlayerDetection : MonoBehaviour
     Vector3 motion;
     public float speed;
     bool facingRight = true;
-    bool active = false;
-    int alt = 1;
+    public bool active = false;
+    public int alt = 1;
     bool counting = false;
     int sideForce = 0;
     public GameObject player;
@@ -43,12 +43,12 @@ public class EnemyPlayerDetection : MonoBehaviour
             if (alt == 2)
             {
                 sideForce = 1;
-                alt++;
+                //alt++;
             }
             else
             {
                 sideForce = -1;
-                alt++;
+                //alt++;
             }
             start = true;
         }
@@ -108,25 +108,24 @@ public class EnemyPlayerDetection : MonoBehaviour
 
     public IEnumerator SwitchSide()
     {
-        if (alt > 2)
+        yield return new WaitForSeconds(2f);
+        sideForce = 0;
+        yield return new WaitForSeconds(1f);
+        player_relative_to_enemy=enemy.transform.position - player.transform.position;
+        playerColl = player_relative_to_enemy.x;
+        if (playerColl > 0 && playerColl < 10 || playerColl < 0 && playerColl > -10)
         {
-            alt = 1;
+            if (playerColl < 0)
+            {
+                alt = 2;
+                sideForce = 1;
+            }
+            else
+            {
+                alt = 1;
+                sideForce = -1;
+            }
         }
-        if (alt == 2)
-        {
-            yield return new WaitForSeconds(2f);
-            counting = false;
-            sideForce = 1;
-            alt++;
-            //print("player detected if 0");
-        }
-        else
-        {
-            yield return new WaitForSeconds(2f);
-            counting = false;
-            sideForce = -1;
-            alt++;
-            //print("player detected else");
-        }
+        counting = false;
     }
 }
