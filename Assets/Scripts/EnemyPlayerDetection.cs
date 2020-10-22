@@ -106,6 +106,7 @@ public class EnemyPlayerDetection : MonoBehaviour
         }
     }
 
+    //player finder
     public IEnumerator SwitchSide()
     {
         yield return new WaitForSeconds(2f);
