@@ -114,7 +114,7 @@ public class EnemyPlayerDetection : MonoBehaviour
         yield return new WaitForSeconds(1f);
         player_relative_to_enemy=enemy.transform.position - player.transform.position;
         playerColl = player_relative_to_enemy.x;
-        if (playerColl > 0 && playerColl < 10 || playerColl < 0 && playerColl > -10)
+        if (playerColl > 0 && playerColl < 15 || playerColl < 0 && playerColl > -15)
         {
             if (playerColl < 0)
             {

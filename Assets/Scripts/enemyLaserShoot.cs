@@ -17,7 +17,7 @@ public class enemyLaserShoot : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        fireRate = .6f;
+        fireRate = .9f;
         nextFire = Time.time;
     }
 
@@ -40,12 +40,12 @@ public class enemyLaserShoot : MonoBehaviour
             ang = Mathf.Atan2(player_relative_to_enemy.y,player_relative_to_enemy.x) * Mathf.Rad2Deg;
             this.gameObject.transform.rotation = Quaternion.Euler(0,0,ang);
             
-            if (Time.time > nextFire && playerColl > 0 && playerColl < 8 && this.gameObject.GetComponentInParent<EnemyPlayerDetection>().alt == 1)
+            if (Time.time > nextFire && playerColl > 0 && playerColl < 10 && this.gameObject.GetComponentInParent<EnemyPlayerDetection>().alt == 1)
             {
                 Instantiate(bullet, this.gameObject.transform.position, this.gameObject.transform.rotation);
                 nextFire = Time.time + fireRate;
             }
-            else if (Time.time > nextFire && playerColl < 0 && playerColl > -8 && this.gameObject.GetComponentInParent<EnemyPlayerDetection>().alt == 2)
+            else if (Time.time > nextFire && playerColl < 0 && playerColl > -10 && this.gameObject.GetComponentInParent<EnemyPlayerDetection>().alt == 2)
             {
                 Instantiate(bullet, this.gameObject.transform.position, this.gameObject.transform.rotation);
                 nextFire = Time.time + fireRate;
