@@ -1,4 +1,9 @@
-﻿using System.Collections;
+﻿
+/*
+By: Lorenzo Jácome
+Description: Manges everything related to the drone health, drone movement, and its laser.
+*/
+using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
@@ -39,6 +44,7 @@ public class droneScript : MonoBehaviour
         }
 
         //Laser code:
+        //When it shoots, it increases the laser size in y till it hits the floor
         laserScale = laser.transform.localScale.y;
         if (laserScale < laserScaleLimit && laserShoots){
             laser.transform.localScale += new Vector3(0,laserSpeed * Time.deltaTime,0);
@@ -46,7 +52,7 @@ public class droneScript : MonoBehaviour
             laser.transform.localScale += new Vector3(0,-laserSpeed * Time.deltaTime,0);
         }
     }
-
+     //Detects when impacts a wall and changes direction
     void OnCollisionEnter2D(Collision2D col){
         if (col.gameObject.tag == "Bullet"){
             health -= 1;
@@ -65,13 +71,13 @@ public class droneScript : MonoBehaviour
             col.gameObject.GetComponent<Health>().TakeDamage(damage);
         }
     }
-
+    //Find when the laser hits the ground, so it stops growing
     void OnTriggerEnter2D(Collider2D col){
         if(col.gameObject.tag.Equals("Ground")){
             laserScaleLimit = laser.transform.localScale.y;
         }
     }
-
+    //When the laser stops touching the ground, it can increase again
     void OnTriggerExit2D(Collider2D col)
     {
         laserScaleLimit = 1000f;
