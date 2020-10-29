@@ -1,4 +1,9 @@
-﻿using System.Collections;
+﻿
+/*
+By: Maximiliano Sapién
+Description: When the bullet colides with the player, it damages it
+*/
+using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
