@@ -1,4 +1,9 @@
-﻿using System.Collections;
+﻿
+/*
+By: Maximilianto Sapién
+Description: Manages the enemy's bullet: Movement and collition
+*/
+using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
