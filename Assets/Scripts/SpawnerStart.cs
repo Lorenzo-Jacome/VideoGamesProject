@@ -1,4 +1,9 @@
-﻿using System.Collections;
+﻿
+/*
+By: Maximiliano Sapién
+Description: Instantiates objects in the world
+*/
+using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
