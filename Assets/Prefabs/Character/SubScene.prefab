@@ -672,6 +672,12 @@ PrefabInstance:
       propertyPath: staminaBar
       value: 
       objectReference: {fileID: 9019442103545693428}
+    - target: {fileID: 2630619175503075012, guid: 23610f38f57b9464a8304085d835584a,
+        type: 3}
+      propertyPath: canvas
+      value: 
+      objectReference: {fileID: 707100650262626729, guid: 9866baaa83c5629448a78f86b058c8c7,
+        type: 3}
     - target: {fileID: 2630619175503075034, guid: 23610f38f57b9464a8304085d835584a,
         type: 3}
       propertyPath: healthBar

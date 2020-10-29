@@ -60,10 +60,6 @@ public class droneScript : MonoBehaviour
                 goRight = true;
             }
         }
-        else if (col.gameObject.tag.Equals ("Player"))
-        {
-            col.gameObject.GetComponent<Health>().TakeDamage(damage);
-        }
     }
 
     void OnTriggerEnter2D(Collider2D col){

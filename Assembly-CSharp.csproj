@@ -49,6 +49,7 @@
      <Compile Include="Assets\Scripts\MotionRB.cs" />
      <Compile Include="Assets\Scripts\MoveStraight.cs" />
      <Compile Include="Assets\Scripts\PlayerSpawner.cs" />
+     <Compile Include="Assets\Scripts\Portal.cs" />
      <Compile Include="Assets\Scripts\SoundManagerScript.cs" />
      <Compile Include="Assets\Scripts\SpawnerRand.cs" />
      <Compile Include="Assets\Scripts\SpawnerStart.cs" />
@@ -59,6 +60,7 @@
      <Compile Include="Assets\Scripts\enemBulletMov.cs" />
      <Compile Include="Assets\Scripts\enemyBulletDamage.cs" />
      <Compile Include="Assets\Scripts\enemyLaserShoot.cs" />
+     <Compile Include="Assets\Scripts\waitingDead.cs" />
      <Compile Include="Assets\laserDamage.cs" />
      <None Include="Assets\Sprites\tiles\Enemies\enemies_spritesheet.txt" />
      <None Include="Assets\Sprites\tiles\HUD\hud_spritesheet.xml" />

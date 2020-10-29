@@ -132,6 +132,7 @@ GameObject:
   m_Component:
   - component: {fileID: 2060012859845443274}
   - component: {fileID: 2060012859845443277}
+  - component: {fileID: -1779840519694389879}
   - component: {fileID: 2060012859845443276}
   - component: {fileID: 2060012859845443275}
   - component: {fileID: 2060012859845443272}
@@ -208,6 +209,19 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!114 &-1779840519694389879
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2060012859845443279}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e85e1a13eadd5a24e84d119a03bd3e02, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  damage: 1
 --- !u!114 &2060012859845443276
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -220,7 +234,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d1ac505f8ad6f1445a722d6bc8e4999b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  speed: 2.5
+  speed: 2
   obj: {fileID: 2060012859845443274}
   laser: {fileID: 2060012859762153042}
   laserScaleLimit: 150
