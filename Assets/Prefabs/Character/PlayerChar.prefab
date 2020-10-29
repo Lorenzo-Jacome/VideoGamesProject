@@ -4914,7 +4914,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   bullet: {fileID: 5456470229976214958, guid: 0b2e35bebc73abb4db3844dbdcb2d2dc, type: 3}
   bulletSpawn: {fileID: 2630619174235892155}
-  delay: 0.2
+  delay: 0.5
   player: {fileID: 2630619175503075012}
   ang: 0
 --- !u!114 &2630619175503075034
