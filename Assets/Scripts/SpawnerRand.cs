@@ -1,4 +1,9 @@
-﻿using System.Collections;
+﻿
+/*
+By: Maximiliano Sapién
+Description: Array where its components are called randomly. So it can be used to spawn enemies or generate the level.
+*/
+using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
