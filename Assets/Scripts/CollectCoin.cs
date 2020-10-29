@@ -1,4 +1,8 @@
-﻿using System.Collections;
+﻿
+/*
+Description: Used to trigger actions in the world by items.
+*/
+using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
