@@ -1,4 +1,9 @@
-﻿using System.Collections;
+﻿
+/*
+By: Maximiliano Sapién
+Description: Mainly used to specify the duration of a bullet in the world.
+*/
+using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
