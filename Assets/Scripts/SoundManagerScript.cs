@@ -1,4 +1,9 @@
-﻿using System.Collections;
+﻿
+/*
+By: Maximiliano Sapién
+Description: Loads and reproduces sounds based on the player actions
+*/
+using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
