@@ -10,6 +10,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
 
+//Updates the health bar based on your current health:
 public class Bars : MonoBehaviour
 {
     public Slider healthBar;

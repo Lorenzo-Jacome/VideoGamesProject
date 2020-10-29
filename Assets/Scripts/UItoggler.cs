@@ -1,4 +1,9 @@
-﻿using System.Collections;
+﻿
+/*
+By: Maximiliano Sapién
+Description: To spawn or despawn any UI element when its functions are called
+*/
+using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 

@@ -1,4 +1,9 @@
-﻿using UnityEngine;
+﻿
+/*
+By: Maximiliano Sapién
+Description: Created to make bullets go to a direction infinitely
+*/
+using UnityEngine;
 
 public class MoveStraight : MonoBehaviour
 {

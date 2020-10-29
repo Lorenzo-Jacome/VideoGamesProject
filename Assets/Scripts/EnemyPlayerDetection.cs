@@ -1,4 +1,10 @@
-﻿using System.Collections;
+﻿
+/*
+By: Maximiliano Sapién
+Description: AI for enemies. It detects and moves the enemy in relation to a detected player within a radius. 
+*/
+
+using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;

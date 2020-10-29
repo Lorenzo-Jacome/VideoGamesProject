@@ -1,4 +1,9 @@
-﻿using UnityEngine;
+﻿
+/*
+By: Maximiliano Sapién
+Description: Used to rotate proyectiles when it is needed. 
+*/
+using UnityEngine;
 
 public class Spin : MonoBehaviour
 {

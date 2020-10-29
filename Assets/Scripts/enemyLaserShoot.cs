@@ -1,4 +1,9 @@
-﻿using System.Collections;
+﻿
+/*
+By: Maximilianto Sapién
+Description: Controls the enemy shooting mechanics
+*/
+using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
@@ -39,7 +44,7 @@ public class enemyLaserShoot : MonoBehaviour
             playerColl = player_relative_to_enemy.x;
             ang = Mathf.Atan2(player_relative_to_enemy.y,player_relative_to_enemy.x) * Mathf.Rad2Deg;
             this.gameObject.transform.rotation = Quaternion.Euler(0,0,ang);
-            
+            //Parametros del radio de disparo
             if (Time.time > nextFire && playerColl > 0 && playerColl < 10 && this.gameObject.GetComponentInParent<EnemyPlayerDetection>().alt == 1)
             {
                 Instantiate(bullet, this.gameObject.transform.position, this.gameObject.transform.rotation);

@@ -1,4 +1,9 @@
-﻿using System.Collections;
+﻿
+/*
+By: Maximiliano Sapién
+Description: It instantiates the player in the level. Goes attached to the spawner gameObject
+*/
+using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 

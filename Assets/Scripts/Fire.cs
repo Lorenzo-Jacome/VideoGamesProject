@@ -1,4 +1,9 @@
-﻿using UnityEngine;
+﻿
+/*
+By: Maximiliano Sapién
+Description: Action of shooting by the player
+*/
+using UnityEngine;
 
 public class Fire : MonoBehaviour
 {
@@ -13,6 +18,8 @@ public class Fire : MonoBehaviour
     // Update is called once per frame
     void LateUpdate()
     {
+        //Rotate an empty object that represents the gun angle:
+        //RestaMP is relation between pointer and player and it's calculated in other script.
        if(Input.GetButtonDown("Fire1"))
        {
            if (Time.time > nextShot)

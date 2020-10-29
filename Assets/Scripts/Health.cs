@@ -1,4 +1,10 @@
-﻿using System.Collections;
+﻿
+/*
+By: Maximiliano Sapién
+Colab: Lorenzo Jácome
+Description: Manages the health of the player and enemies. It also only manages the player's stamina in relation to time. 
+*/
+using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;

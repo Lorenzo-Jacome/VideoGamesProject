@@ -1,4 +1,9 @@
-﻿using System.Collections;
+﻿
+/*
+Creator: Maximiliano Sapién
+Description: It damages the player when taking contact with the enemy
+*/
+using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
