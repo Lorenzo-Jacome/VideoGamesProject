@@ -1,11 +1,16 @@
-﻿using System.Collections;
+﻿
+/*
+By: Maximiliano Sapién
+Description: Damages enemy when a bullet hits the enemy.
+*/
+using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
 public class BulletDamage : MonoBehaviour
 {
     public int damage;
-
+//When there's a collition with gameObject enemy, it takes life out of enemy.
     void OnCollisionEnter2D(Collision2D col)
     {
         if(col.gameObject.tag == "Enemy")
