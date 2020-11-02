@@ -36,7 +36,6 @@
     <ImplicitlyExpandDesignTimeFacades>false</ImplicitlyExpandDesignTimeFacades>
   </PropertyGroup>
   <ItemGroup>
-     <Compile Include="Assets\Jack_Tolmachoff_Design\Sci Fi Pixel Art UI Kit\Demo\Scripts\CanvasController.cs" />
      <Compile Include="Assets\Scripts\Bars.cs" />
      <Compile Include="Assets\Scripts\BulletDamage.cs" />
      <Compile Include="Assets\Scripts\CameraFollow.cs" />
@@ -60,15 +59,16 @@
      <Compile Include="Assets\Scripts\enemBulletMov.cs" />
      <Compile Include="Assets\Scripts\enemyBulletDamage.cs" />
      <Compile Include="Assets\Scripts\enemyLaserShoot.cs" />
+     <Compile Include="Assets\Scripts\laserDamage.cs" />
      <Compile Include="Assets\Scripts\waitingDead.cs" />
-     <Compile Include="Assets\laserDamage.cs" />
+     <Compile Include="Assets\cyberP\Sci Fi Pixel Art UI Kit\Demo\Scripts\CanvasController.cs" />
      <None Include="Assets\Sprites\tiles\Enemies\enemies_spritesheet.txt" />
      <None Include="Assets\Sprites\tiles\HUD\hud_spritesheet.xml" />
      <None Include="Assets\Sprites\tiles\Tiles\tiles_spritesheet.xml" />
      <None Include="Assets\Sprites\tiles\Player\p1_spritesheet.txt" />
      <None Include="Assets\Sprites\tiles\Player\p3_spritesheet.txt" />
      <None Include="Assets\Sprites\tiles\license.txt" />
-     <None Include="Assets\Jack_Tolmachoff_Design\Sci Fi Pixel Art UI Kit\Font\FontAttribution.txt" />
+     <None Include="Assets\cyberP\Sci Fi Pixel Art UI Kit\Font\FontAttribution.txt" />
      <None Include="Assets\Sprites\tiles\Player\p2_spritesheet.txt" />
      <None Include="Assets\Sprites\tiles\Items\items_spritesheet.xml" />
     <Reference Include="UnityEngine">
