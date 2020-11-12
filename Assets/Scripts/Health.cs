@@ -15,6 +15,7 @@ public class Health : MonoBehaviour
     public int currentHealth;
     public Slider healthBar;
     bool display = false;
+    public GameObject healthDrop, currency1, currency2;
     // Start is called before the first frame update
     void Start()
     {
@@ -52,6 +53,15 @@ public class Health : MonoBehaviour
 
         if(currentHealth <= 0)
         {
+            int randomDrop = Random.Range(1,16);
+            
+            if(randomDrop >= 1 && randomDrop <= 5){
+                Instantiate(healthDrop, this.gameObject.transform.position, Quaternion.identity);
+            } else if(randomDrop >= 6 && randomDrop <= 10){
+                Instantiate(currency1, this.gameObject.transform.position, Quaternion.identity);
+            } else if(randomDrop >= 11 && randomDrop <= 15){
+                Instantiate(currency2, this.gameObject.transform.position, Quaternion.identity);
+            }
             Destroy(gameObject);
         }
     }

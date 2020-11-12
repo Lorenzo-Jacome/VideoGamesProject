@@ -251,6 +251,12 @@ MonoBehaviour:
   maxHealth: 3
   currentHealth: 0
   healthBar: {fileID: 0}
+  healthDrop: {fileID: 7853502546872292820, guid: 035e078722c1cd249897eeb12aaa5c9c,
+    type: 3}
+  currency1: {fileID: 7853502546872292820, guid: 035e078722c1cd249897eeb12aaa5c9c,
+    type: 3}
+  currency2: {fileID: 7853502546872292820, guid: 035e078722c1cd249897eeb12aaa5c9c,
+    type: 3}
 --- !u!114 &5966427128650938976
 MonoBehaviour:
   m_ObjectHideFlags: 0
