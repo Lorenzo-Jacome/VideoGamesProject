@@ -18,5 +18,11 @@ public class BulletDamage : MonoBehaviour
             col.gameObject.GetComponent<Health>().TakeDamage(damage);
         }
         Destroy(gameObject);
+        if (col.gameObject.tag == "Walls")
+        {
+
+            Destroy(gameObject);
+
+        }
     }
 }

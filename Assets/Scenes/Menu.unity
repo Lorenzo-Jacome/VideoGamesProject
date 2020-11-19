@@ -537,8 +537,9 @@ GameObject:
   m_Component:
   - component: {fileID: 827322693}
   - component: {fileID: 827322692}
+  - component: {fileID: 827322694}
   m_Layer: 0
-  m_Name: Point Light 2D
+  m_Name: PointLight2D
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -599,6 +600,22 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &827322694
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 827322691}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e4dac8f706c934d46b02afb406e1ef00, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  lt: {fileID: 827322692}
+  maxRange: 1
+  minRange: 0.3
+  flickerSpeed: 1.5
 --- !u!1 &854571591
 GameObject:
   m_ObjectHideFlags: 0
