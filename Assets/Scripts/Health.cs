@@ -53,13 +53,25 @@ public class Health : MonoBehaviour
 
         if(currentHealth <= 0)
         {
+            if(this.gameObject.tag == "Player")
+            {
+                Destroy(gameObject);
+            }
+            
             int randomDrop = Random.Range(1,16);
             
-            if(randomDrop >= 1 && randomDrop <= 5){
+            if(randomDrop >= 1 && randomDrop <= 5)
+            {
                 Instantiate(healthDrop, this.gameObject.transform.position, Quaternion.identity);
-            } else if(randomDrop >= 6 && randomDrop <= 10){
+            } 
+            
+            else if(randomDrop >= 6 && randomDrop <= 10)
+            {
                 Instantiate(currency1, this.gameObject.transform.position, Quaternion.identity);
-            } else if(randomDrop >= 11 && randomDrop <= 15){
+            } 
+            
+            else if(randomDrop >= 11 && randomDrop <= 15)
+            {
                 Instantiate(currency2, this.gameObject.transform.position, Quaternion.identity);
             }
             Destroy(gameObject);
