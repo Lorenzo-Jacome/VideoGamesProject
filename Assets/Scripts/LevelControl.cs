@@ -10,6 +10,7 @@ public class LevelControl : MonoBehaviour
 {
     public void GoToScene(string name)
     {
+        Time.timeScale = 1f;
         SceneManager.LoadScene(name);
     }
 }
