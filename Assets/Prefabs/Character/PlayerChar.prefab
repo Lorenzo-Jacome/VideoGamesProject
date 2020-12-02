@@ -4932,6 +4932,9 @@ MonoBehaviour:
   maxHealth: 5
   currentHealth: 0
   healthBar: {fileID: 0}
+  healthDrop: {fileID: 0}
+  currency1: {fileID: 0}
+  currency2: {fileID: 0}
 --- !u!212 &2630619175503075033
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -4971,7 +4974,7 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
-  m_Sprite: {fileID: -790265013083169100, guid: 7111d6d63ffbacf4e9125bd94b7f2421,
+  m_Sprite: {fileID: 2053531312528387624, guid: 3212e6696a412f74e815ba7852b38bbf,
     type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
