@@ -28,9 +28,13 @@ public class Pause : MonoBehaviour
 
     public void PauseGame()
     {
-        PauseScreen.SetActive(true);
-        Time.timeScale = 0f;
-        GamePaused = true;
+        GameObject PlayerChar = GameObject.Find("PlayerChar");
+        if (PlayerChar != null)
+        {
+            PauseScreen.SetActive(true);
+            Time.timeScale = 0f;
+            GamePaused = true;
+        }
     }
 
     public void ResumeGame()
