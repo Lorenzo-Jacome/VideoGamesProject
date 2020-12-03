@@ -20,4 +20,9 @@ public class UItoggler : MonoBehaviour
     {
         Destroy(gameObject);
     }
+
+    public void ResetHighScore(int score)
+    {
+        PlayerPrefs.SetInt("HighScore", 0);
+    }
 }

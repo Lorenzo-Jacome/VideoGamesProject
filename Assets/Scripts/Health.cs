@@ -19,7 +19,7 @@ public class Health : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        currentHealth = maxHealth;
+        currentHealth = PlayerPrefs.GetInt("prefsHealth");
         if(healthBar != null)
         {
             healthBar.maxValue = maxHealth;
@@ -40,6 +40,7 @@ public class Health : MonoBehaviour
         {
             currentHealth += amount;
             healthBar.value = currentHealth;
+            PlayerPrefs.SetInt("prefsHealth", currentHealth);
         }
     }
 
@@ -49,6 +50,7 @@ public class Health : MonoBehaviour
         if(display)
         {
             healthBar.value = currentHealth;
+            PlayerPrefs.SetInt("prefsHealth", currentHealth);
         }
 
         if(currentHealth <= 0)
