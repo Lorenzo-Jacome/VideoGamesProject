@@ -6,12 +6,12 @@ using UnityEngine.UI;
 public class pointsManager : MonoBehaviour
 {
     public Text playerPoints;
-    private int points;
+    static private int points;
 
     // Start is called before the first frame update
     void Start()
     {
-        
+        playerPoints.text = points.ToString();
     }
 
     // Update is called once per frame
