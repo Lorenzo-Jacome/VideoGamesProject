@@ -57,6 +57,7 @@ GameObject:
   m_Component:
   - component: {fileID: 5966427128650938988}
   - component: {fileID: 5966427128650938989}
+  - component: {fileID: 7461814851042411709}
   - component: {fileID: 5966427128650938979}
   - component: {fileID: 5966427128650938982}
   - component: {fileID: 5966427128650938990}
@@ -137,8 +138,8 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
---- !u!68 &5966427128650938979
-EdgeCollider2D:
+--- !u!61 &7461814851042411709
+BoxCollider2D:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
@@ -150,14 +151,40 @@ EdgeCollider2D:
   m_IsTrigger: 0
   m_UsedByEffector: 0
   m_UsedByComposite: 0
+  m_Offset: {x: -0.0013282597, y: -0.07504665}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0.5, y: 0.5}
+    oldSize: {x: 0.32, y: 0.32}
+    newSize: {x: 0.32, y: 0.32}
+    adaptiveTilingThreshold: 0.5
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  serializedVersion: 2
+  m_Size: {x: 0.10216543, y: 0.16990669}
+  m_EdgeRadius: 0
+--- !u!68 &5966427128650938979
+EdgeCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5966427128650938991}
+  m_Enabled: 0
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
   m_Offset: {x: 0, y: 0}
   m_EdgeRadius: 0
   m_Points:
   - {x: -0.05988561, y: -0.15885647}
   - {x: -0.059748568, y: -0.1301805}
-  - {x: -0.05001763, y: -0.130151}
-  - {x: -0.049963284, y: -0.080443904}
-  - {x: -0.04979194, y: -0.069674775}
+  - {x: -0.0487323, y: -0.13079369}
+  - {x: -0.04932062, y: -0.07144646}
+  - {x: -0.04979194, y: -0.03561313}
   - {x: -0.049865585, y: -0.020001156}
   - {x: -0.040185526, y: -0.019879743}
   - {x: -0.040143162, y: 0.01564186}
@@ -166,9 +193,9 @@ EdgeCollider2D:
   - {x: 0.029903607, y: 0.0072937547}
   - {x: 0.04951353, y: -0.0104451105}
   - {x: 0.04955691, y: -0.08957879}
-  - {x: 0.03192967, y: -0.10420865}
+  - {x: 0.049281813, y: -0.10420865}
   - {x: 0.049700048, y: -0.120344095}
-  - {x: 0.0504078, y: -0.15995869}
+  - {x: 0.04976515, y: -0.16060136}
   - {x: -0.060214065, y: -0.1600809}
 --- !u!61 &5966427128650938982
 BoxCollider2D:

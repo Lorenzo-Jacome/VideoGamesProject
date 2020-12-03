@@ -14,11 +14,14 @@ public class BulletDamage : MonoBehaviour
     void OnCollisionEnter2D(Collision2D col)
     {
         print("coll");
-        if(col.gameObject.tag == "Enemy")
+        if (col.gameObject.tag != "coinDrop" && col.gameObject.tag != "goldDrop" && col.gameObject.tag != "HealthDrop")
         {
-            print("enemy");
-            col.gameObject.GetComponent<Health>().TakeDamage(damage);
+            if(col.gameObject.tag == "Enemy")
+            {
+                print("enemy");
+                col.gameObject.GetComponent<Health>().TakeDamage(damage);
+            }
+            Destroy(gameObject);
         }
-        Destroy(gameObject);
     }
 }
