@@ -242,6 +242,12 @@ MonoBehaviour:
   laserTime: 5
   maxHealth: 3
   damage: 1
+  healthDrop: {fileID: 3476478547898369620, guid: c34fd39435cb8ea4fbda5041a57f6b29,
+    type: 3}
+  currency1: {fileID: 3815129864899183343, guid: 9cd0e45002c002f41b7c7ad205851d53,
+    type: 3}
+  currency2: {fileID: 4820311920718584288, guid: 35e6965c1b86d7a48bd4d0206c903a00,
+    type: 3}
 --- !u!61 &2060012859845443275
 BoxCollider2D:
   m_ObjectHideFlags: 0

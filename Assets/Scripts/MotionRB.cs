@@ -1,6 +1,7 @@
 ﻿
 /*
 By: Maximiliano Sapién
+Edited by: Lorenzo Jácome
 Description: Everything releated to the player movement.
 */
 using System.Collections;

@@ -22,6 +22,7 @@ public class droneScript : MonoBehaviour
     int health;
     public int damage;
 
+    public GameObject healthDrop, currency1, currency2;
 
     void Start()
     {
@@ -57,6 +58,21 @@ public class droneScript : MonoBehaviour
         if (col.gameObject.tag == "Bullet"){
             health -= 1;
             if(health <= 0){
+                 int randomDrop = Random.Range(1,16);
+                if(randomDrop >= 1 && randomDrop <= 5)
+                {
+                    Instantiate(healthDrop, this.gameObject.transform.position, Quaternion.identity);
+                } 
+                
+                else if(randomDrop >= 6 && randomDrop <= 10)
+                {
+                    Instantiate(currency1, this.gameObject.transform.position, Quaternion.identity);
+                } 
+                
+                else if(randomDrop >= 11 && randomDrop <= 15)
+                {
+                    Instantiate(currency2, this.gameObject.transform.position, Quaternion.identity);
+                }
                 Destroy(gameObject);
             }
         } else if(col.gameObject.tag == "Walls" || col.gameObject.tag == "Enemy"){

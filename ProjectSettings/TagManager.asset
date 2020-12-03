@@ -8,6 +8,10 @@ TagManager:
   - Enemy
   - Walls
   - Bullet
+  - HealthDrop
+  - coinDrop
+  - goldDrop
+  - PointsCounter
   layers:
   - Default
   - TransparentFX
