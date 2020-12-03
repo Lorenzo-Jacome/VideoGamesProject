@@ -36,6 +36,7 @@
     <ImplicitlyExpandDesignTimeFacades>false</ImplicitlyExpandDesignTimeFacades>
   </PropertyGroup>
   <ItemGroup>
+     <Compile Include="Assets\HighScoreMenu.cs" />
      <Compile Include="Assets\Scripts\Bars.cs" />
      <Compile Include="Assets\Scripts\BulletDamage.cs" />
      <Compile Include="Assets\Scripts\CameraFollow.cs" />

@@ -6,11 +6,12 @@ using UnityEngine.UI;
 public class pointsManager : MonoBehaviour
 {
     public Text playerPoints;
-    static private int points;
+    private int points;
 
     // Start is called before the first frame update
     void Start()
     {
+        points = PlayerPrefs.GetInt("PlayerPoints", 0);
         playerPoints.text = points.ToString();
     }
 
@@ -22,6 +23,11 @@ public class pointsManager : MonoBehaviour
 
     public void addPoints(int pointsToAdd){
         points += pointsToAdd;
+        PlayerPrefs.SetInt("PlayerPoints", points);
         playerPoints.text = points.ToString();
+
+        if(points > PlayerPrefs.GetInt("HighScore", 0)){
+            PlayerPrefs.SetInt("HighScore", points);
+        }
     }
 }
